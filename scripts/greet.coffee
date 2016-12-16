@@ -39,7 +39,7 @@ module.exports = (robot) ->
     msg.reply "いってらっしゃい！"
 
   robot.respond /お(しごと|仕事)(終|お)わりました(？|か？)/i, (msg) ->
-    msg.reply "（#{msg.message.user.name}さんがかわいすぎる件についてーーーーー！！）"
+    msg.send "（#{msg.message.user.name}さんがかわいすぎる件についてーーーーー！！）"
 
 
 
