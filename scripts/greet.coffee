@@ -33,9 +33,13 @@ module.exports = (robot) ->
     msg.reply "#{goodnight_msg}"
 
   robot.hear /((疲|つか)れた|I'm tired)/i, (msg) ->
-    msg.reply "#{msg.message.user.name}さん、おつかれさま！"
+    msg.reply "おつかれさま！"
 
   robot.respond /いってきます/i, (msg) ->
     msg.reply "いってらっしゃい！"
+
+  robot.respond /お(しごと|仕事)(終|お)わりました(？|か？)/i, (msg) ->
+    msg.reply "（#{msg.message.user.name}さんがかわいすぎる件についてーーーーー！！）"
+
 
 
